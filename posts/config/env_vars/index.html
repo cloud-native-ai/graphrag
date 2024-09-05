@@ -241,12 +241,12 @@ a {
                     <ul>
                         <li>
                             
-<a href="/graphrag/posts/prompt_tuning/auto_prompt_tuning/">Automatic Templating</a>
+<a href="/graphrag/posts/prompt_tuning/auto_prompt_tuning/">Auto Tuning</a>
 
                         </li>
                         <li>
                             
-<a href="/graphrag/posts/prompt_tuning/manual_prompt_tuning/">Manual Prompt Tuning</a>
+<a href="/graphrag/posts/prompt_tuning/manual_prompt_tuning/">Manual Tuning</a>
 
                         </li>
                     </ul>
@@ -671,13 +671,6 @@ a {
 <td>10</td>
 </tr>
 <tr>
-<td><code>GRAPHRAG_EMBEDDING_TARGET</code></td>
-<td></td>
-<td>The target fields to embed. Either <code>required</code> or <code>all</code>.</td>
-<td><code>str</code></td>
-<td><code>required</code></td>
-</tr>
-<tr>
 <td><code>GRAPHRAG_EMBEDDING_SLEEP_ON_RATE_LIMIT_RECOMMENDATION</code></td>
 <td></td>
 <td>Whether to sleep on rate limit recommendation. (Azure Only)</td>
@@ -868,6 +861,13 @@ a {
 <td>optional</td>
 <td><code>id</code></td>
 </tr>
+<tr>
+<td><code>GRAPHRAG_CHUNK_ENCODING_MODEL</code></td>
+<td>The encoding model to use for chunking.</td>
+<td><code>str</code></td>
+<td>optional</td>
+<td>The top-level encoding model.</td>
+</tr>
 </tbody>
 </table>
 <h2>Prompting Overrides</h2>
@@ -902,6 +902,13 @@ a {
 <td><code>str</code></td>
 <td>optional</td>
 <td><code>organization,person,event,geo</code></td>
+</tr>
+<tr>
+<td><code>GRAPHRAG_ENTITY_EXTRACTION_ENCODING_MODEL</code></td>
+<td>The encoding model to use for entity extraction.</td>
+<td><code>str</code></td>
+<td>optional</td>
+<td>The top-level encoding model.</td>
 </tr>
 <tr>
 <td><code>GRAPHRAG_SUMMARIZE_DESCRIPTIONS_PROMPT_FILE</code></td>
@@ -944,6 +951,13 @@ a {
 <td><code>int</code></td>
 <td>optional</td>
 <td>1</td>
+</tr>
+<tr>
+<td><code>GRAPHRAG_CLAIM_EXTRACTION_ENCODING_MODEL</code></td>
+<td>The encoding model to use for claim extraction.</td>
+<td><code>str</code></td>
+<td>optional</td>
+<td>The top-level encoding model</td>
 </tr>
 <tr>
 <td><code>GRAPHRAG_COMMUNITY_REPORTS_PROMPT_FILE</code></td>
